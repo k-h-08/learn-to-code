@@ -1,0 +1,66 @@
+<!-- LESSON TEMPLATE: HTML, CSS, JavaScript -->
+<!-- Save this as lesson-template.html and duplicate for each lesson -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson: Intro to HTML</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Lesson: Intro to HTML</h1>
+      <p class="hero-subtitle">Learn the foundation of web development by writing your first HTML tags.</p>
+      <a href="index.html" class="btn-primary">← Back to Home</a>
+    </div>
+  </header>
+
+  <main class="lesson-section">
+    <section class="lesson-content">
+      <h2>📝 What You'll Learn</h2>
+      <ul>
+        <li>What HTML is and why it's important</li>
+        <li>How to structure a basic HTML document</li>
+        <li>Using tags like <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, and <code>&lt;a&gt;</code></li>
+      </ul>
+
+      <h2>📖 Lesson</h2>
+      <p>HTML stands for HyperText Markup Language. It tells the browser what each piece of content is on a page.</p>
+
+      <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello World&lt;/h1&gt;
+    &lt;p&gt;This is my first HTML page!&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+      <h2>💻 Try It Yourself</h2>
+      <textarea id="editor" rows="8">&lt;h1&gt;Edit Me!&lt;/h1&gt;</textarea>
+      <button onclick="runCode()" class="btn-secondary">Run Code</button>
+      <div id="output" class="output-preview"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Learn to Code • Continue your journey to CSS →</p>
+  </footer>
+
+  <script>
+    function runCode() {
+      const code = document.getElementById("editor").value;
+      document.getElementById("output").innerHTML = code;
+    }
+  </script>
+</body>
+
+</html>
