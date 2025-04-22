@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson: Intro to JavaScript</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Lesson: Intro to JavaScript</h1>
+      <p class="hero-subtitle">Add interactivity and dynamic behavior to your websites with JavaScript.</p>
+      <a href="index.html" class="btn-primary">← Back to Home</a>
+    </div>
+  </header>
+  <main class="lesson-section">
+    <section class="lesson-content">
+      <h2>📝 What You'll Learn</h2>
+      <ul>
+        <li>Basic syntax and variables</li>
+        <li>Using JavaScript to change page content</li>
+        <li>Outputting messages using DOM manipulation</li>
+      </ul>
+      <h2>📖 Lesson</h2>
+      <pre><code>&lt;script&gt;
+  document.getElementById("output-js").innerText = "Hello from JavaScript!";
+&lt;/script&gt;</code></pre>
+      <h2>💻 Try It Yourself</h2>
+      <textarea id="editor-js" rows="8">&lt;script&gt;
+  document.getElementById("output-js").innerText = "You changed me!";
+&lt;/script&gt;</textarea>
+      <button onclick="runJS()" class="btn-secondary">Run JavaScript</button>
+      <div id="output-js" class="output-preview">This text will change...</div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Learn to Code • More lessons coming soon!</p>
+  </footer>
+  <script>
+    function runJS() {
+      const code = document.getElementById("editor-js").value;
+      document.getElementById("output-js").innerHTML = code;
+    }
+  </script>
+</body>
+</html>
