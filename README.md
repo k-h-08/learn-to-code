@@ -45,11 +45,3 @@ This project is organized into multiple parts:
 - 📦 Planned Node.js backend integration for saving progress
 
 ---
-
-## 🚀 Getting Started
-
-1. **Clone the repository**
-
-```bash
-git clone https://github.com/your-username/learn-to-code-tool.git
-cd learn-to-code-tool
