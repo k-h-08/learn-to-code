@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learn to Code Tool</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to Learn to Code!</h1>
+    <p>This tool will teach you HTML, CSS, JavaScript, React, and Node.js step by step.</p>
+  </header>
+
+  <main>
+    <section id="lesson">
+      <h2>Lesson 1: What is HTML?</h2>
+      <p>HTML stands for HyperText Markup Language. It’s used to structure content on the web.</p>
+
+      <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
+
+      <textarea id="editor" rows="5" cols="40">&lt;h1&gt;Hello World&lt;/h1&gt;</textarea>
+      <button onclick="runCode()">Run Code</button>
+
+      <div id="output"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
