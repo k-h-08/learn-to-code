@@ -1,30 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learn to Code Tool</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learn to Code | Master Web Development</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <h1>Welcome to Learn to Code!</h1>
-    <p>This tool will teach you HTML, CSS, JavaScript, React, and Node.js step by step.</p>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Learn to Code</h1>
+      <p class="hero-subtitle">Your step-by-step journey to becoming a full-stack developer</p>
+      <a href="#start" class="btn-primary">Start Learning</a>
+    </div>
   </header>
 
-  <main>
-    <section id="lesson">
-      <h2>Lesson 1: What is HTML?</h2>
-      <p>HTML stands for HyperText Markup Language. It’s used to structure content on the web.</p>
+  <section id="start" class="features">
+    <h2>What You'll Learn</h2>
+    <div class="feature-grid">
+      <div class="feature-card">
+        <h3>HTML & CSS</h3>
+        <p>Master the building blocks of the web and create beautiful, responsive layouts.</p>
+      </div>
+      <div class="feature-card">
+        <h3>JavaScript</h3>
+        <p>Learn dynamic behavior, interactivity, and real-time updates with the language of the web.</p>
+      </div>
+      <div class="feature-card">
+        <h3>React</h3>
+        <p>Build powerful front-end apps using reusable components and efficient workflows.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Node.js</h3>
+        <p>Create backends, REST APIs, and server-side logic to power full web applications.</p>
+      </div>
+    </div>
+  </section>
 
-      <pre><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></pre>
+  <section class="cta-section">
+    <h2>Ready to build your future?</h2>
+    <p>Start from zero and learn by building real projects step-by-step.</p>
+    <a href="#" class="btn-secondary">Begin Your Journey</a>
+  </section>
 
-      <textarea id="editor" rows="5" cols="40">&lt;h1&gt;Hello World&lt;/h1&gt;</textarea>
-      <button onclick="runCode()">Run Code</button>
-
-      <div id="output"></div>
-    </section>
-  </main>
+  <footer>
+    <p>© 2025 Learn to Code • Made with ❤️ for curious minds</p>
+  </footer>
 
   <script src="script.js"></script>
 </body>
