@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lesson: Intro to CSS</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Lesson: Intro to CSS</h1>
+      <p class="hero-subtitle">Style your web pages and bring them to life with CSS.</p>
+      <a href="index.html" class="btn-primary">← Back to Home</a>
+    </div>
+  </header>
+  <main class="lesson-section">
+    <section class="lesson-content">
+      <h2>📝 What You'll Learn</h2>
+      <ul>
+        <li>How to add styles to HTML elements</li>
+        <li>Basic CSS syntax and selectors</li>
+        <li>Inline and internal styling methods</li>
+      </ul>
+      <h2>📖 Lesson</h2>
+      <pre><code>&lt;h1 style="color: blue;"&gt;Styled Heading&lt;/h1&gt;</code></pre>
+      <h2>💻 Try It Yourself</h2>
+      <textarea id="editor-css" rows="8">&lt;h1 style="color: green; font-family: sans-serif;"&gt;Try changing my style!&lt;/h1&gt;</textarea>
+      <button onclick="runCSS()" class="btn-secondary">Run CSS</button>
+      <div id="output-css" class="output-preview"></div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Learn to Code • Next: Intro to JavaScript →</p>
+  </footer>
+  <script>
+    function runCSS() {
+      const code = document.getElementById("editor-css").value;
+      document.getElementById("output-css").innerHTML = code;
+    }
+  </script>
+</body>
+</html>
