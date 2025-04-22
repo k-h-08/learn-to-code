@@ -1,18 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Learn to Code | Master Web Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learn to Code | Home</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
 </head>
+
 <body>
+  <nav class="navbar">
+    <div class="navbar-logo">Learn to Code</div>
+    <div class="dropdown">
+      <button class="dropbtn">Lessons ▾</button>
+      <div class="dropdown-content">
+        <a href="lessons/lesson-html-intro.html">HTML</a>
+        <a href="lessons/lesson-css-intro.html">CSS</a>
+        <a href="lessons/lesson-js-intro.html">JavaScript</a>
+        <a href="#">React</a>
+        <a href="#">Node</a>
+      </div>
+    </div>
+  </nav>
+
   <header class="hero">
     <div class="hero-overlay">
       <h1 class="hero-title">Learn to Code</h1>
-      <p class="hero-subtitle">Your step-by-step journey to becoming a full-stack developer</p>
+      <p class="hero-subtitle">Interactive lessons from beginner to pro. Learn HTML, CSS, JS, React, and Node step-by-step.</p>
       <a href="#start" class="btn-primary">Start Learning</a>
+    </div>
+    <div class="hero-code-snippets">
+      <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+      <code>let total = 100 + 50;</code>
+      <code>const style = 'bold';</code>
+      <code>&lt;div class="box"&gt;&lt;/div&gt;</code>
     </div>
   </header>
 
@@ -21,33 +43,35 @@
     <div class="feature-grid">
       <div class="feature-card">
         <h3>HTML & CSS</h3>
-        <p>Master the building blocks of the web and create beautiful, responsive layouts.</p>
+        <p>Build web pages from scratch and create responsive layouts.</p>
       </div>
       <div class="feature-card">
         <h3>JavaScript</h3>
-        <p>Learn dynamic behavior, interactivity, and real-time updates with the language of the web.</p>
+        <p>Make your sites interactive and dynamic.</p>
       </div>
       <div class="feature-card">
         <h3>React</h3>
-        <p>Build powerful front-end apps using reusable components and efficient workflows.</p>
+        <p>Build single-page apps with reusable components.</p>
       </div>
       <div class="feature-card">
         <h3>Node.js</h3>
-        <p>Create backends, REST APIs, and server-side logic to power full web applications.</p>
+        <p>Power your backend with JavaScript servers and APIs.</p>
       </div>
     </div>
   </section>
 
   <section class="cta-section">
-    <h2>Ready to build your future?</h2>
-    <p>Start from zero and learn by building real projects step-by-step.</p>
-    <a href="#" class="btn-secondary">Begin Your Journey</a>
+    <h2>Track Your Progress</h2>
+    <p>See how far you’ve come and continue where you left off.</p>
+    <div id="progressDisplay"></div>
+    <a href="lessons/lesson-html-intro.html" class="btn-secondary">Resume Learning</a>
   </section>
 
   <footer>
-    <p>© 2025 Learn to Code • Made with ❤️ for curious minds</p>
+    <p>© 2025 Learn to Code • Build your future one lesson at a time.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
+
 </html>
