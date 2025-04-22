@@ -1,4 +1,12 @@
-// Future interactive scripts can go here
-console.log("Welcome to the Learn to Code platform!");
+// Local storage tracking and greeting
+window.addEventListener("DOMContentLoaded", () => {
+  const progressDisplay = document.getElementById("progressDisplay");
+  let lastVisited = localStorage.getItem("lastVisitedLesson");
 
-// Add animated typing or lesson intro loader later
+  if (lastVisited && progressDisplay) {
+    progressDisplay.innerHTML = `You last visited: <strong>${lastVisited}</strong>`;
+  }
+});
+
+// On each lesson page, add this to set progress:
+// localStorage.setItem("lastVisitedLesson", "Intro to HTML");
