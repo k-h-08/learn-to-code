@@ -1,0 +1,27 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 2rem;
+  background: #f7f7f7;
+  color: #333;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 1rem;
+  margin-bottom: 2rem;
+}
+
+#lesson {
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+textarea {
+  width: 100%;
+  font-family: monospace;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
